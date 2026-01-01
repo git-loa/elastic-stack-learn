@@ -1,0 +1,39 @@
+# Ignore system files
+*.swp
+*.swo
+*.tmp
+
+# Ignore editor files
+.vscode/
+.idea/
+
+# Ignore OS files
+.DS_Store
+
+# Ignore sensitive configs (never commit passwords)
+**/secrets.yml
+**/passwords.txt
+
+# Ignore Elasticsearch data directories
+/var/lib/elasticsearch/
+/var/log/elasticsearch/
+
+# Ignore Logstash logs and state
+/var/log/logstash/
+/var/lib/logstash/
+
+# Ignore Kibana logs
+/var/log/kibana/
+
+# Ignore Beats logs and registries
+/var/log/filebeat/
+/var/lib/filebeat/
+/var/log/auditbeat/
+/var/lib/auditbeat/
+/var/log/metricbeat/
+/var/lib/metricbeat/
+
+# Ignore compiled artifacts
+*.zip
+*.tar.gz
+*.deb
